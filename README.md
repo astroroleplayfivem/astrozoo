@@ -5,15 +5,6 @@ Astro Zoo updated for:
 - **Inventories:** qb-inventory, ox_inventory, tgiann-inventory, and default ESX inventory
 - **Targets:** qb-target and ox_target
 
-This build keeps your current zoo changes in place:
-- elephant and croc exhibits removed
-- ticket-only entry flow
-- no shop ped
-- static guards with rifles for visual security only
-- lower music volume
-- announcements every 3 hours
-- broom and tray props on actions
-
 ## Setup
 
 ### 1) Pick your framework, inventory, and target in `shared/config.lua`
@@ -44,16 +35,6 @@ For ESX:
 Import:
 - `sql/astro_zoo.sql`
 
-## Notes on inventory compatibility
-
-### qb-inventory
-This build uses framework item checks/removals and server-side consumable handling.
-
-### ox_inventory
-This build supports ox item checks/removals server-side. For consumables, add the item definitions below with the provided `client.export` lines so ox can run the use effect properly. ox_inventory server item functions like `GetItemCount` and `RemoveItem`, and client item usage via `client.export`, are documented by Overextended. citeturn982117search0turn982117search13
-
-### tgiann-inventory
-This build supports tgiann item definitions in README format. TGIANN’s item docs show items can use `client.export`, `consume`, animations, props, and status effects in the item definition itself. TGIANN also notes many item features work similarly to ox_inventory. citeturn857777search0turn245752view0
 
 ## Notes on target compatibility
 
@@ -76,10 +57,6 @@ This build supports tgiann item definitions in README format. TGIANN’s item do
 
 ### Optional membership item
 - `zoo_membership`
-
-No ticket item is required in this build.
-
----
 
 # QB-Core / qb-inventory items
 
@@ -186,4 +163,6 @@ Put these in `qb-core/shared/items.lua`:
     ['description'] = 'Sweet cotton candy.'
 },
 ``
+
+Download : https://github.com/elajnabe/flight-animals.  These have the stream files so the animals spawn. If any animals have texture issues, just replace them with animals that dont have then and edit html/config files.
 
