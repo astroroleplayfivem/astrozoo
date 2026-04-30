@@ -1,10 +1,5 @@
 # Astro Zoo
 
-Astro Zoo updated for:
-- **Frameworks:** QB-Core and ESX
-- **Inventories:** qb-inventory, ox_inventory, tgiann-inventory, and default ESX inventory
-- **Targets:** qb-target and ox_target
-
 ## Setup
 
 ### 1) Pick your framework, inventory, and target in `shared/config.lua`
